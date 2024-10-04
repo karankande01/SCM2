@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="/images/orange.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}">
+
+</head>
+<body>
+    <div id="content" class=" bg-gray-200 w-1/2 p-4 flex flex-col space-y-3 mx-auto mt-4">
+        <h1 class="text-2xl font-bold" data-th-text="${name}">Welcome to home page</h1>
+        <p class="text-xl text-gray-700">spring initializer <span data-th-text="${spring_initializer}"></span> </p>
+        <a class="text-orange-700" data-th-href="${spring_initializer}" target="_blank">start hacking</a>
+
+        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius eos modi magnam error tempore 
+            pariatur voluptatibus nesciunt enim alias velit magni nulla amet rerum, similique veritatis quo 
+            exercitationem minima est.</p>
+
+            <button class="px-3 py-3 rounded bg-orange-700 text-white hover:bg-orange-600">click here</button>
+    </div>
+     
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+</body>
+</html>
